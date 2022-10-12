@@ -16,7 +16,7 @@ const Header = () => {
                         }
 
                     </div>
-                    <div className={`bg-purple-200 w-full md:bg-transparent md:flex justify-center absolute md:static sm:grid duration-500 ease-in-out ${open ? 'top-16' : 'top-[-120px]'}`}>
+                    <div className={`bg-purple-200 w-full md:bg-transparent md:flex justify-center absolute md:static sm:grid duration-500 ease-in-out ${open ? 'top-16' : 'top-[-120px]'} z-50`}>
                         <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/quizes'>Quizes</NavLink>
                         <NavLink to='/statistics'>Statistics</NavLink>
                         <NavLink to='/blog'>Blog</NavLink>

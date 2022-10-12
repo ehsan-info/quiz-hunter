@@ -15,7 +15,7 @@ const Quiz = ({ quiz }) => {
             <div className='title-container font-mono font-bold px-10 my-5'>
                 <h4>Title: {name}</h4>
                 <p>Total Quiz: {total}</p>
-                <button className='bg-orange-500 hover:bg-orange-600 px-10 py-2 rounded-md' onClick={handleNavigate} quiz={quiz}>Play Quiz</button>
+                <button className='bg-orange-500 hover:bg-orange-600 px-10 py-2 rounded-md' onClick={handleNavigate} quiz={quiz}>Start Quiz</button>
             </div>
         </div>
     );
