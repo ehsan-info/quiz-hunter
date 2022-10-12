@@ -7,7 +7,7 @@ const Quizes = () => {
     const quizes = useLoaderData();
     // console.log(quizes.data);
     return (
-        <div className='quiz-container'>
+        <div className='quiz-container mx-4'>
             <div className='quiz-banner'>
                 <img className='' src={Banner} alt="" />
             </div>

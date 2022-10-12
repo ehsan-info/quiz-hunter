@@ -12,7 +12,7 @@ const Quiz = ({ quiz }) => {
             <div className='image-container p-2'>
                 <img className='w-80 m-auto' src={logo} alt="" />
             </div>
-            <div className='title-container font-mono font-bold text-left px-10 my-5'>
+            <div className='title-container font-mono font-bold px-10 my-5'>
                 <h4>Title: {name}</h4>
                 <p>Total Quiz: {total}</p>
                 <button className='bg-orange-500 hover:bg-orange-600 px-10 py-2 rounded-md' onClick={handleNavigate} quiz={quiz}>Play Quiz</button>
