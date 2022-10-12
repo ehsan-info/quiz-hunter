@@ -6,13 +6,16 @@ const Statistics = () => {
     console.log(statistics.data)
     return (
         <div>
-            <h2>Statistics</h2>
-            <LineChart width={500} height={400} data={statistics.data}>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-            </LineChart>
+            <h2 className='font-mono text-3xl font-bold my-6 text-orange-600'>Statistics</h2>
+            <div className='inline-block mt-20'>
+                <LineChart width={500} height={400} data={statistics.data}>
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                </LineChart>
+            </div>
+            <p className='font-mono text-center'>Fig: Showing statistics against Quiz name and total questions</p>
         </div>
     );
 };

@@ -7,9 +7,9 @@ const QuizDetails = () => {
     console.log(quizDetails.data);
     return (
         <div>
-            <h2>Quiz of {quizDetails.data.name}</h2>
+            <h2 className='font-mono text-3xl font-bold my-3 text-orange-600'>Quiz of {quizDetails.data.name} (Total questions are: {quizDetails.data.total})</h2>
             {
-                quizDetails.data.questions.map(questions => <QuizQuestions key={questions.id} questions={questions}></QuizQuestions>)
+                quizDetails.data.questions.map((questions, idx) => <QuizQuestions key={questions.id} questions={questions} qId={idx}></QuizQuestions>)
             }
         </div>
     );
