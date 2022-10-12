@@ -3,7 +3,7 @@
     height: 300px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .banner-text {
         display: none;
     }

@@ -8,6 +8,18 @@ Quiz Hunter
 
 ## Live Website Link
 
+This project was bootstrapped with [Create React App] (https://stunning-pasca-92afd5.netlify.app/)
+
+## Information About Project
+
+This project is all about quiz. Quiz about modern coding context. Such as frontend part, full stack part etc.
+
+## What Did We Use
+
+React-Router for routing or navigation
+Recharts for showing charts
+Tailwind Css for design
+HeroIcons for icon
 
 ## Available Scripts
 

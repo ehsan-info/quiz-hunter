@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    .recharts-wrapper {
+        width: 300px;
+    }
+
+    .recharts-wrapper svg {
+        width: 300px;
+    }
+}
