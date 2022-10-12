@@ -25,6 +25,13 @@ Recharts for showing charts;
 Tailwind Css for design;
 HeroIcons for icon;
 
+### Work Process
+1. First installed all the necessary tools
+2. Set the Main route and Header with App.js file
+3. In App js file created all route using createBrowserRouter, path, element, loader
+4. Created quizes, statistics, blog using components.
+5. Fetch data from API using useLoaderData and displayed in the website
+
 
 
 
