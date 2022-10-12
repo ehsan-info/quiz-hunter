@@ -4,6 +4,7 @@ import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Quizes from './components/Quizes/Quizes';
+import Statistics from './components/Statistics/Statistics';
 import Main from './layout/Main';
 
 function App() {
@@ -33,8 +34,14 @@ function App() {
           },
           element: <QuizDetails></QuizDetails>
         },
+        {
+          path: '/statistics',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Statistics></Statistics>,
+        },
         { path: '/blog', element: <Blog></Blog> },
-        { path: '/about', element: <About></About> },
       ]
     },
     { path: '*', element: <div>404 This route is not found</div> }

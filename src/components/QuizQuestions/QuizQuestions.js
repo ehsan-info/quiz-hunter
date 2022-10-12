@@ -18,12 +18,17 @@ const QuizQuestions = ({ questions }) => {
             });
         }
     }
+    const showCorrectAnswer = () => {
+        toast.info(`coorect answer is: ${correctAnswer}`, {
+            position: toast.POSITION.TOP_CENTER
+        });
+    };
     return (
         <div className='question-lists'>
             <div className='my-4 border-2 rounded-md border-orange-500 bg-slate-300 p-4'>
                 <div className='flex justify-between my-4'>
                     <p>{processedQuestion}</p>
-                    <Link><EyeIcon className="h-6 w-6" /></Link>
+                    <Link onClick={showCorrectAnswer}><EyeIcon className="h-6 w-6" /></Link>
                 </div>
                 <div className=''>
                     <div className='grid grid-cols-2 gap-4 items-center'>
