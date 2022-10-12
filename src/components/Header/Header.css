@@ -1,0 +1,9 @@
+.header-nav a {
+    color: #0E0A38;
+    margin-right: 10px;
+}
+
+.header-nav a:hover,
+.header-nav .active {
+    color: #FF630E;
+}
