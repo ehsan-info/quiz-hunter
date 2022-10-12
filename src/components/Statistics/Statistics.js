@@ -15,7 +15,7 @@ const Statistics = () => {
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 </LineChart>
             </div>
-            <p className='font-mono text-center'>Fig: Showing statistics against Quiz name and total questions</p>
+            <p className='font-mono text-center mt-3 mb-5'>Fig: Showing statistics against Quiz name and total questions</p>
         </div>
     );
 };

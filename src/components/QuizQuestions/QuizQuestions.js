@@ -32,7 +32,7 @@ const QuizQuestions = ({ questions, qId }) => {
                     <Link onClick={showCorrectAnswer}><EyeIcon className="h-6 w-6" /></Link>
                 </div>
                 <div className=''>
-                    <div className='grid grid-cols-2 gap-4 items-center'>
+                    <div className='grid md:grid-cols-2 gap-4 items-center'>
                         {
                             options.map((option, idx) => <button onClick={() => setClicked(`${option}`)} className='flex items-center p-4 border-2 rounded-md  text-left hover:bg-orange-600 h-24' key={idx}><StopCircleIcon className="h-4 w-4 mr-2" />{option}</button>)
 

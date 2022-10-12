@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
@@ -44,7 +44,14 @@ function App() {
         { path: '/blog', element: <Blog></Blog> },
       ]
     },
-    { path: '*', element: <div>404 This route is not found</div> }
+    {
+      path: '*',
+      element: <div className='font-mono my-3'>
+        <p className='text-6xl font-bold my-3 text-orange-600'>404</p>
+        <p className='text-7xl font-bold my-3 text-zinc-500'>This route is not found</p>
+        <p className=' text-zinc-500'>Go to <Link className='text-blue-700 underline font-bold' to='/quizes'>Home Page</Link></p>
+      </div>
+    }
   ])
   return (
     <div className="App">
